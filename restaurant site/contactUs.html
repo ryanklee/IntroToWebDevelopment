@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Contact Us</title>
+    </head>
+    <body>
+        <div align="center">
+            <h1>Quark's Bar and Grill</h1>
+        </div>
+        <hr/>
+        <a href="index.html">Home</a>
+        <a href="menu.html">Menu</a>
+        <a href="contactUs.html">Contact Us</a>
+        <hr/>
+        <form action="contactUs.html" method="POST">
+            <table>
+                <tr>
+                    <td>First Name:</td>
+                    <td><input type="text" id="fName" name="fName"></td>
+                </tr>
+                <tr>
+                    <td>Last Name:</td>
+                    <td><input type="text" id="lName" name="lName"></td>
+                </tr>
+                <tr>
+                    <td>Email:</td>
+                    <td><input type="text" id="email" name="email"></td>
+                </tr>
+                <tr>
+                    <td>Reason:</td>
+                    <td><select id="reaon" name="reason">
+                            <option value="selectReason">Select a Reason</option>
+                            <option value="Catering">Catering</option>
+                            <option value="Private Party">Private Party</option>
+                            <option value="Feedback">Feedback</option>
+                            <option value="Other">Other</option>
+                        </select></td>
+                </tr>
+                <tr>
+                    <td>Additional Information: </td>
+                    <td><textarea id="additionalInformation" name="addtionalInformation"></textarea></td>
+                </tr>
+                <tr>
+                    <td>Have you been to this restuarant?:</td>
+                    <td><input type="radio" id="pa" name="pa" value="No" checked>No
+                        <input type="radio" id="pa" name="pa" value="Yes">Yes</td>
+                </tr>
+                <tr>
+                    <td>Best days to contact you:</td>
+                    <td><input type="checkbox" id="tosAck" name="tosAck" value="tosAck"/>M
+                        <input type="checkbox" id="tosAck" name="tosAck" value="tosAck"/>T
+                        <input type="checkbox" id="tosAck" name="tosAck" value="tosAck"/>W
+                        <input type="checkbox" id="tosAck" name="tosAck" value="tosAck"/>Th
+                        <input type="checkbox" id="tosAck" name="tosAck" value="tosAck"/>F<br/>
+                        </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><input type="submit" value="Send Request"/></td>
+                </tr> 
+
+            </table>
+        </form>
+        <hr/>
+        <div align="center">
+            Promenade, DS9, Bejoran Orbit<br/>
+            555-555-5555
+        </div>
+
+    </body>
+</html>
