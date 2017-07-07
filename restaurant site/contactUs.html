@@ -5,6 +5,11 @@
             rel="stylesheet"
             type="text/css" />
         <title>Contact Us</title>
+        <style>
+            .formlabel {
+                font-weight: bold;
+            }
+        </style>
     </head>
     <body>
         <div class="header">
@@ -18,19 +23,19 @@
         <form action="contactUs.html" method="POST">
             <table>
                 <tr>
-                    <td>First Name:</td>
+                    <td class="formlabel">First Name:</td>
                     <td><input type="text" id="fName" name="fName"></td>
                 </tr>
                 <tr>
-                    <td>Last Name:</td>
+                    <td class="formlabel">Last Name:</td>
                     <td><input type="text" id="lName" name="lName"></td>
                 </tr>
                 <tr>
-                    <td>Email:</td>
+                    <td class="formlabel">Email:</td>
                     <td><input type="text" id="email" name="email"></td>
                 </tr>
                 <tr>
-                    <td>Reason:</td>
+                    <td class="formlabel">Reason:</td>
                     <td><select id="reaon" name="reason">
                             <option value="selectReason">Select a Reason</option>
                             <option value="Catering">Catering</option>
@@ -40,16 +45,16 @@
                         </select></td>
                 </tr>
                 <tr>
-                    <td>Additional Information: </td>
+                    <td class="formlabel">Additional Information: </td>
                     <td><textarea id="additionalInformation" name="addtionalInformation"></textarea></td>
                 </tr>
                 <tr>
-                    <td>Have you been to this restuarant?:</td>
+                    <td class="formlabel">Have you been to this restuarant?:</td>
                     <td><input type="radio" id="pa" name="pa" value="No" checked>No
                         <input type="radio" id="pa" name="pa" value="Yes">Yes</td>
                 </tr>
                 <tr>
-                    <td>Best days to contact you:</td>
+                    <td class="formlabel">Best days to contact you:</td>
                     <td><input type="checkbox" id="tosAck" name="tosAck" value="tosAck"/>M
                         <input type="checkbox" id="tosAck" name="tosAck" value="tosAck"/>T
                         <input type="checkbox" id="tosAck" name="tosAck" value="tosAck"/>W
