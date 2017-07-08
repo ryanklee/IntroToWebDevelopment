@@ -1,3 +1,17 @@
+a:visited {
+    color:orange;
+}
+
+a:hover {
+    font-weight: bold;
+
+}
+
+a:active {
+    text-decoration: none;
+
+}
+
 .header {
     text-align: center;
     font-family: fantasy 
