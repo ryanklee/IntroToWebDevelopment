@@ -1,4 +1,32 @@
+a {
+  font-family: monospace;
+  text-decoration: underline;
+  font-weight: none;
+}
+
+a:link {
+  text-decoration: none;
+}
+
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+  color: mediumseagreen;
+}
+
+a:active {
+  text-decoration: none;
+}
+
 table {
     border: 1px;
-    width: 100%
+    width: 100%;
+    background-color: mediumseagreen;
+}
+
+tbody {
+    font-style: italic;
 }
