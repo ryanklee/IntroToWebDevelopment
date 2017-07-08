@@ -1,0 +1,20 @@
+#div1 {
+
+    height: 150px;
+
+    width: 400px;
+
+    margin: 20px;
+
+    border: 1px solid red;
+
+    padding: 10px;
+
+}
+
+For this object, calculate:
+
+Total height == 150+20+20+1+1+10+10 == 212px
+Total width == 400+20+20+1+1+10+10 == 462px
+Browser calculated height == 172px
+Browser calculated width == 422px
