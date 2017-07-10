@@ -20,59 +20,50 @@
         <hr/>
         <div class="container">
             <ul class="nav nav-tabs">
-                <li class="active"><a href="contactUs.html">Contact Us</a></li>
-                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html"><span class="glyphicon glyphicon-home"></a></li>
                 <li><a href="menu.html">Menu</a></li>
+                <li class="active"><a href="contactUs.html">Contact Us</a></li>
             </ul>
         </div>
         <hr/>
         <form action="contactUs.html" method="POST">
-            <table>
-                <tr>
-                    <td class="formlabel">First Name:</td>
-                    <td><input type="text" id="fName" name="fName"></td>
-                </tr>
-                <tr>
-                    <td class="formlabel">Last Name:</td>
-                    <td><input type="text" id="lName" name="lName"></td>
-                </tr>
-                <tr>
-                    <td class="formlabel">Email:</td>
-                    <td><input type="text" id="email" name="email"></td>
-                </tr>
-                <tr>
-                    <td class="formlabel">Reason:</td>
-                    <td><select id="reaon" name="reason">
-                            <option value="selectReason">Select a Reason</option>
-                            <option value="Catering">Catering</option>
-                            <option value="Private Party">Private Party</option>
-                            <option value="Feedback">Feedback</option>
-                            <option value="Other">Other</option>
-                        </select></td>
-                </tr>
-                <tr>
-                    <td class="formlabel">Additional Information: </td>
-                    <td><textarea id="additionalInformation" name="addtionalInformation"></textarea></td>
-                </tr>
-                <tr>
-                    <td class="formlabel">Have you been to this restuarant?:</td>
-                    <td><input type="radio" id="pa" name="pa" value="No" checked>No
-                        <input type="radio" id="pa" name="pa" value="Yes">Yes</td>
-                </tr>
-                <tr>
-                    <td class="formlabel">Best days to contact you:</td>
-                    <td><input type="checkbox" id="tosAck" name="tosAck" value="tosAck"/>M
-                        <input type="checkbox" id="tosAck" name="tosAck" value="tosAck"/>T
-                        <input type="checkbox" id="tosAck" name="tosAck" value="tosAck"/>W
-                        <input type="checkbox" id="tosAck" name="tosAck" value="tosAck"/>Th
-                        <input type="checkbox" id="tosAck" name="tosAck" value="tosAck"/>F<br/>
-                        </td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td><input type="submit" value="Send Request"/></td>
-                </tr> 
-            </table>
+    
+            <div class="form-group">
+                <label for="fname">Name:</label>
+                <input type="text" id="fName" name="fName">
+            </div>
+
+        
+            Last Name:
+            <input type="text" id="lName" name="lName">
+        
+            Email:
+            <input type="text" id="email" name="email">
+        
+            Reason:
+            <select id="reaon" name="reason">
+                <option value="selectReason">Select a Reason</option>
+                <option value="Catering">Catering</option>
+                <option value="Private Party">Private Party</option>
+                <option value="Feedback">Feedback</option>
+                <option value="Other">Other</option>
+            </select>
+        
+            Additional Information:
+            <textarea id="additionalInformation" name="addtionalInformation"></textarea>
+        
+            Have you been to this restuarant?:
+            <input type="radio" id="pa" name="pa" value="No" checked>No
+            <input type="radio" id="pa" name="pa" value="Yes">Yes
+        
+            Best days to contact you:
+            <input type="checkbox" id="tosAck" name="tosAck" value="tosAck"/>M
+            <input type="checkbox" id="tosAck" name="tosAck" value="tosAck"/>T
+            <input type="checkbox" id="tosAck" name="tosAck" value="tosAck"/>W
+            <input type="checkbox" id="tosAck" name="tosAck" value="tosAck"/>Th
+            <input type="checkbox" id="tosAck" name="tosAck" value="tosAck"/>F
+            <input type="submit" value="Send Request"/>
+
         </form>
         <hr/>
         <div class="footer">
