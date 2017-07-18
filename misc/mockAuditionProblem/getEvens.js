@@ -24,7 +24,6 @@ function genInputArray(startNum, endNum){
   for (var i = startNum; i <= endNum; i++){
     inputArray.push(i);
   }
-  console.log(inputArray)
   return inputArray
 }
 
@@ -35,7 +34,6 @@ function genEvenArray(inputArray){
       evenArray.push(inputArray[i]);
     }
   }
-  console.log(evenArray)
   return evenArray
 }
 
@@ -46,7 +44,13 @@ function genStepArray(inputArray, stepNum){
       console.log(inputArray[i]);
       stepArray.push(inputArray[i]);
     }
-    console.log(stepArray);
   }
   return stepArray;
+}
+
+function getEvens(){
+    var inputArray = genInputArray(document.forms["evensAndStep"]["startNum"].value, document.forms["evensAndStep"]["endNum"].value);
+    var evenArray = genEvenArray(inputArray);
+    var stepArray = genStepArray(evenArray, stepNum);
+    return stepArray;
 }
