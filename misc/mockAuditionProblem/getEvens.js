@@ -51,6 +51,6 @@ function genStepArray(inputArray, stepNum){
 function getEvens(){
     var inputArray = genInputArray(document.forms["evensAndStep"]["startNum"].value, document.forms["evensAndStep"]["endNum"].value);
     var evenArray = genEvenArray(inputArray);
-    var stepArray = genStepArray(evenArray, stepNum);
+    var stepArray = genStepArray(evenArray, document.forms["evensAndStep"]["stepNum"].value);
     return stepArray;
 }

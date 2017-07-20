@@ -7,7 +7,7 @@
 </Head>
 <body>
     <div class="container">
-        <form name="evensAndStep" onsubmit="getEvens()">
+        <form name="evensAndStep" onsubmit="return getEvens();" class="form-inline">
             <!-- startNum form input here -->
             <div class="form-group">
                 <label for="startNum">Start Number: </label>
@@ -24,10 +24,10 @@
                 <input type="number" class="form-control" id="stepNum">
             </div>
             <!-- getEvens button here-->
-            <button type="submit" id="calcGetEvens" class="btn btn-default">Get Evens</button>
+            <button type="submit" id="returnGetEvens" class="btn btn-default">Get Evens</button>
 
             <!-- display output of stepArray here -->
         </form>
     </div>
 </body>    
-</html>1
+</html>
