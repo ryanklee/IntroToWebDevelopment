@@ -52,5 +52,11 @@ function getEvens(){
     var inputArray = genInputArray(document.forms["evensAndStep"]["startNum"].value, document.forms["evensAndStep"]["endNum"].value);
     var evenArray = genEvenArray(inputArray);
     var stepArray = genStepArray(evenArray, document.forms["evensAndStep"]["stepNum"].value);
-    return stepArray;
+    document.getElementById("textDisp").innerText = "Here are the even numbers between " + 
+                                                    document.forms["evensAndStep"]["startNum"].value +
+                                                    " and " + document.forms["evensAndStep"]["endNum"].value +
+                                                    " by " + document.forms["evensAndStep"]["stepNum"].value +
+                                                    stepArray;
+     
+    return false;
 }

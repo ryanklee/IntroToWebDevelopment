@@ -7,7 +7,7 @@
 </Head>
 <body>
     <div class="container">
-        <form name="evensAndStep" onsubmit="return getEvens();" class="form-inline">
+        <form name="evensAndStep" onsubmit="return getEvens();">
             <!-- startNum form input here -->
             <div class="form-group">
                 <label for="startNum">Start Number: </label>
@@ -28,6 +28,13 @@
 
             <!-- display output of stepArray here -->
         </form>
+        <table id="results" class="table table-responsive table-striped">
+            <thead>
+                <tr>
+                    <td><span id="textDisp"></span></td>
+                </tr>
+            </thead>
+        </table>
     </div>
 </body>    
 </html>
